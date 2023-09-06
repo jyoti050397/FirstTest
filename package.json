@@ -1,0 +1,21 @@
+{
+  "name": "cypress-new-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "combine:reports": "npx mochawesome-merge cypress/reports/mochareports/*.json --reportDir cypress/reports/mochareports",
+    "generate:html": "npx marge cypress/reports/mochareports/*.json --reportDir cypress/reports/mochareports",
+    "test:open": "cypress open",
+    "testChrome": "npm run test --"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
+}

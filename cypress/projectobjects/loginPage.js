@@ -62,7 +62,7 @@ export default class LoginPage {
 
   // Click on Profile available at the bottom of the left side.
   clickProfile() {
-    this.elements.Profile().click();
+    this.elements.Profile().click({force:true});
   }
 
   clickApps() {

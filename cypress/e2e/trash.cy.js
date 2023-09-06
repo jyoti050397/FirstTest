@@ -1,5 +1,5 @@
 import LoginPage from '../projectobjects/loginPage';
-import TrashPage from '../projectobjects/TrashPage';
+import TrashPage from '../projectobjects/trashPage';
 describe('ClickUp Test', () => {
   const loginPage = new LoginPage();
   const trashPage = new TrashPage()

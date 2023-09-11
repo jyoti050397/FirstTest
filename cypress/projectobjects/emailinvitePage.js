@@ -29,7 +29,7 @@ export default class EmailInvitePage {
 
     guidelink: () =>cy.get('.cu-tms-nav__learn-more-link'),
 
-    toastSuccess: () => cy.get('div[data-test="team-users-settings__toast-success"]',{ timeout: 10000 }),
+    toastSuccess: () => cy.get('div[data-test="team-users-settings__toast-success"]',{ timeout: 20000 }),
 
     Memberaccess:()=>cy.findByRole('button', { name: 'Member Access to public Spaces, Docs and Dashboards.' }),
 

@@ -45,7 +45,7 @@ export default class EmailInvitePage {
 
     dropdown:()=>cy.get('.cu-dropdown__toggle.cu-tms-user-settings-list__ellipsis'),
 
-    resendinvite:()=>cy.get('.cu-tms-user-settings-list__icon.cu-icon_control-resend-invitation'),
+    resendinvite:()=>cy.get('.cu-tms-user-settings-list__icon.cu-icon_control-resend-invitation',{ timeout: 10000 }),
 
     cancelinvite:()=>cy.get('.cu-tms-user-settings-list__text'),
 

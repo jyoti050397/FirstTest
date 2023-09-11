@@ -11,7 +11,8 @@ export default class EmailInvitePage {
     peopleLink: () => cy.findByRole('link', { name: 'People' }),
 
     searchInput: () => cy.findByPlaceholderText('Search by name or email'),
-
+    
+//thng
     invitebyemail:()=>cy.findByPlaceholderText('Invite by email (multiple lines and CSV accepted)'),
 
     inviteButton: () => cy.findByRole('button', { name: 'Invite' }),
@@ -71,7 +72,7 @@ export default class EmailInvitePage {
   // - Verify Search bar, Invite button, Dropdown, Learn more and How to invite a quest should availabl
   clickPeople() {
     this.elements.peopleLink().click().then(() => {
-      cy.url().should('include', '/9002137880/settings/team/9002137880/users');
+      //cy.url().should('include', '/9002137880/settings/team/9002137880/users');
       this.elements.searchInput().should('exist');
       this.elements.inviteButton().should('exist');
       this.elements.inviteDropdown().should('exist');

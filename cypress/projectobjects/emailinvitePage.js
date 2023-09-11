@@ -10,9 +10,9 @@ export default class EmailInvitePage {
 
     peopleLink: () => cy.findByRole('link', { name: 'People' }),
 
-    searchInput: () => cy.findByPlaceholderText('Search by name or email'),
+    searchInput: () => cy.get('[data-test="team-users-settings__input-by-name-email"]');
     
-//thng
+
     invitebyemail:()=>cy.findByPlaceholderText('Invite by email (multiple lines and CSV accepted)'),
 
     inviteButton: () => cy.findByRole('button', { name: 'Invite' }),

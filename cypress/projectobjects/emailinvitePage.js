@@ -60,6 +60,7 @@ export default class EmailInvitePage {
 // - Verify the user should navigate to Invite page
 // - Verify Search bar, Invite button, Dropdown, Learn more and How to invite a quest should available
 // - Verify three section should visible
+// commenting 
 
   hover() {
     this.elements.hoverLink().should('exist').trigger('mouseover');

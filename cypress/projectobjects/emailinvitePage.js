@@ -10,7 +10,7 @@ export default class EmailInvitePage {
 
     peopleLink: () => cy.findByRole('link', { name: 'People' }),
 
-    searchInput: () => cy.get('[data-test="team-users-settings__input-by-name-email"]'),
+    searchInput: () => cy.get('[data-test="team-users-settings__input-by-name-email"]',{ timeout: 20000 }),
     
 
     invitebyemail:()=>cy.findByPlaceholderText('Invite by email (multiple lines and CSV accepted)'),

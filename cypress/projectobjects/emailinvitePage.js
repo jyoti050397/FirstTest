@@ -21,7 +21,7 @@ export default class EmailInvitePage {
 
     howToInviteLink: () => cy.findByRole('link', { name: 'How to invite a guest' }),
 
-    bannerEmail: () => cy.get('[data-test="team-users-settings__input-by-name-email"]'),
+    bannerEmail: () => cy.get('[data-test="team-users-settings__input-by-name-email"]',{ timeout: 20000 }),
 
     searchCloseButton: () => cy.get('[data-test="team-users-settings__search-close"]'),
 

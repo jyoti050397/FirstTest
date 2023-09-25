@@ -74,6 +74,8 @@ export default class EmailInvitePage {
   clickPeople() {
     this.elements.peopleLink().click().then(() => {
       //cy.url().should('include', '/9002137880/settings/team/9002137880/users');
+      
+      
       this.elements.searchInput().should('exist');
       this.elements.inviteButton().should('exist');
       this.elements.inviteDropdown().should('exist');
@@ -94,6 +96,7 @@ export default class EmailInvitePage {
       this.elements.Internalguests().should('exist');
     });
   }
+  
 
 
 // Click on Search by Name or email and enter the existed name
